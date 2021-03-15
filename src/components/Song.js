@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Song() {
     return (
-        <div className="song">
+        <div className="song-container">
             <h1>Picture</h1>
             <h1>Song Name</h1>
             <h1>Artist</h1>
