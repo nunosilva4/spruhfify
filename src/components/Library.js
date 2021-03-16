@@ -1,7 +1,7 @@
 import React from 'react';
 import LibrarySong from './LibrarySong';
 
-export default function Library({ songs, setCurrentSong, audioRef, isPlaying }) {
+export default function Library({ songs, setSongs, setCurrentSong, audioRef, isPlaying }) {
     return (
         <div className="library">
             <h2>Library</h2>
@@ -12,6 +12,8 @@ export default function Library({ songs, setCurrentSong, audioRef, isPlaying }) 
                         setCurrentSong={setCurrentSong}
                         song={song}
                         audioRef={audioRef}
+                        songs={songs}
+                        setSongs={setSongs}
                         isPlaying={isPlaying} />)}
             </div>
         </div>

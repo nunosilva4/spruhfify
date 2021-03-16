@@ -35,6 +35,7 @@ export default function App() {
       <Library isPlaying={isPlaying}
         audioRef={audioRef}
         setCurrentSong={setCurrentSong}
+        setSongs={setSongs}
         songs={songs} />
       <audio onLoadedMetadata={updateTime}
         onTimeUpdate={updateTime}
